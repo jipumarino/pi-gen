@@ -1,4 +1,13 @@
-# pi-gen
+# raspiano
+Raspbian-lite-based image for MIDI piano setup.
+
+## Build steps
+1. Edit `stage2/02-net-tweaks/files/wpa_supplicant.conf`, adding wi-fi network and password
+2. Copy `SalamanderGrandPianoV3_44.1khz16bit.zip` to `stage2/03-linuxsampler-config/files/`
+3. `./build-docker.sh`
+4. Final zipped image will be in `deploy`, it can be installed in an SD card like a normal Raspbian image
+
+# Original pi-gen readme
 
 _Tool used to create the raspberrypi.org Raspbian images_
 
