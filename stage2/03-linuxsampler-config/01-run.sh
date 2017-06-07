@@ -5,6 +5,7 @@ install -v -m 644 files/linuxsampler.conf               ${ROOTFS_DIR}/etc/linuxs
 install -v -m 755 files/linuxsampler-init               ${ROOTFS_DIR}/etc/init.d/linuxsampler
 install -v -m 644 files/limits.conf                     ${ROOTFS_DIR}/etc/security/limits.conf
 install -v -m 644 files/asound.conf                     ${ROOTFS_DIR}/etc/asound.conf
+install -v -m 644 files/udev-local.rules                ${ROOTFS_DIR}/etc/udev/rules.d/10-local.rules
 
 on_chroot << EOF
 wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | apt-key add -
