@@ -2,6 +2,7 @@ ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="DeepMind12", RUN+="/usr/bin/ac
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="DeepMind12", RUN+="/usr/bin/aconnect DeepMind12 mio"
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="DeepMind12", RUN+="/usr/bin/aconnect DeepMind12 'Elektron Digitakt'"
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="DeepMind12", RUN+="/usr/bin/aconnect 'Elektron Digitakt' DeepMind12"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="DeepMind12", RUN+="/usr/bin/aconnect 'Arturia MiniLab mkII' DeepMind12"
 
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="Elektron Digitakt", RUN+="/usr/bin/aconnect DeepMind12 'Elektron Digitakt'"
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="Elektron Digitakt", RUN+="/usr/bin/aconnect 'Elektron Digitakt' DeepMind12"
@@ -15,5 +16,7 @@ ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="mio", RUN+="/usr/bin/aconnect 
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="mio", RUN+="/usr/bin/aconnect DeepMind12 mio"
 
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="Arturia MiniLab mkII", RUN+="/usr/bin/aconnect 'Arturia MiniLab mkII' mio"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="Arturia MiniLab mkII", RUN+="/usr/bin/aconnect 'Arturia MiniLab mkII' LinuxSampler"
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="Arturia MiniLab mkII", RUN+="/usr/bin/aconnect 'Arturia MiniLab mkII' 'Elektron Digitakt'"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{product}=="Arturia MiniLab mkII", RUN+="/usr/bin/aconnect 'Arturia MiniLab mkII' DeepMind12"
 
