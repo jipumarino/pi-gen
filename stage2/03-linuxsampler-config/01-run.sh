@@ -7,6 +7,7 @@ install -v -m 644 files/limits.conf                     ${ROOTFS_DIR}/etc/securi
 install -v -m 644 files/asound.conf                     ${ROOTFS_DIR}/etc/asound.conf
 install -v -m 644 files/sound-modprobe.conf             ${ROOTFS_DIR}/etc/modprobe.d/50-sound.conf
 install -v -m 644 files/udev-local.rules                ${ROOTFS_DIR}/etc/udev/rules.d/10-local.rules
+install -v -m 755 files/connect_midi_devices.sh         ${ROOTFS_DIR}/opt/connect_midi_devices.sh
 
 on_chroot << EOF
 wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | apt-key add -
