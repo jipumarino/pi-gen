@@ -21,7 +21,8 @@ EOF
 
 install -d            ${ROOTFS_DIR}/opt/linuxsampler
 install -v -m 644     files/SalamanderGrandPianoV3_44.1khz16bit.zip       ${ROOTFS_DIR}/opt/linuxsampler/SalamanderGrandPianoV3_44.1khz16bit.zip
+install -v -m 644     TaijiguyGigaTron_switched.gig                       ${ROOTFS_DIR}/opt/linuxsampler/TaijiguyGigaTron_switched.gig
 
 on_chroot << EOF
-cd /opt/linuxsampler && unzip SalamanderGrandPianoV3_44.1khz16bit.zip
+cd /opt/linuxsampler && unzip -o SalamanderGrandPianoV3_44.1khz16bit.zip
 EOF
