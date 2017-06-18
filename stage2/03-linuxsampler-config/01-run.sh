@@ -14,7 +14,7 @@ install -v -m 644 files/fstab-readonly                  ${ROOTFS_DIR}/etc/fstab
 on_chroot << EOF
 wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | apt-key add -
 apt-get update
-apt-get install -y linuxsampler
+apt-get install -y linuxsampler vim
 touch /var/log/linuxsampler.log
 systemctl set-default multi-user.target
 systemctl daemon-reload
