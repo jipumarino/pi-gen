@@ -5,7 +5,10 @@ Raspbian-lite-based image for MIDI piano setup.
 1. Edit `stage2/02-net-tweaks/files/wpa_supplicant.conf`, adding wi-fi network and password
 2. Copy `SalamanderGrandPianoV3_44.1khz16bit.zip` to `stage2/03-linuxsampler-config/files/`
 3. `./build-docker.sh`
-4. Final zipped image will be in `deploy`, it can be installed in an SD card like a normal Raspbian image
+4. Final zipped image will be in `deploy`, it can be installed in an SD card like a normal Raspbian image:
+   - `diskutil list` to figure out the SD card disk identifier
+   - `diskutil unmountDisk /dev/diskN` with the SD card disk identifier
+   - `sudo dd bs=1m if=raspiano.img of=/dev/rdiskN conv=sync` with the SD card disk identifier
 
 # Original pi-gen readme
 
